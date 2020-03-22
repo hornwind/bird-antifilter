@@ -45,3 +45,4 @@ services:
         max-size: "2m"
         max-file: "10"
 ```
+Link on Docker Hub: https://hub.docker.com/r/hornwind/bird-antifilter
