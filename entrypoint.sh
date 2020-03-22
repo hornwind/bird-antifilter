@@ -48,7 +48,6 @@ if [ "$old" != "$new" ]
 then
 cat /blacklist/list/ipsum.lst | sed 's_.*_route & reject;_' > /etc/bird/ipsum.txt
 cat /blacklist/list/subnet.lst | sed 's_.*_route & reject;_' > /etc/bird/subnet.txt
-/usr/sbin/birdc configure;
 logger "RKN list reconfigured at $(date)";
 echo $new > /tmp/md5.txt;
 fi

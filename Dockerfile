@@ -35,5 +35,4 @@ COPY entrypoint.sh /
 EXPOSE 179 179
 
 ENTRYPOINT [ "/entrypoint.sh" ]
-# CMD ["bird", "-c", "/etc/bird/bird.conf", "-d"]
 CMD ["/usr/bin/supervisord", "-n", "-c", "/etc/supervisor/supervisord.conf"]
