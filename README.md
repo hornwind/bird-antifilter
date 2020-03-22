@@ -1,5 +1,6 @@
-![Docker Pulls](https://img.shields.io/docker/pulls/hornwind/bird-antifilter)
 ![Docker Cloud Build Status](https://img.shields.io/docker/cloud/build/hornwind/bird-antifilter)
+![Docker Pulls](https://img.shields.io/docker/pulls/hornwind/bird-antifilter)
+![Docker Image Size (tag)](https://img.shields.io/docker/image-size/hornwind/bird-antifilter/latest)
 # [bird-antifilter](https://hub.docker.com/r/hornwind/bird-antifilter)
 This container for the receiving of blocking lists from [antifilter.download](https://antifilter.download/) and the distribution this subnets over BGP with bird daemon. To start, you need to have a raised interface corresponding to the $SOURCE_ADDRESS.
 
