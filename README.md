@@ -1,5 +1,5 @@
-# bird-antifilter
-This container for the receiving of blocking lists from https://antifilter.download/ and the distribution this subnets over BGP with bird daemon.
+# [bird-antifilter](https://hub.docker.com/r/hornwind/bird-antifilter)
+This container for the receiving of blocking lists from [antifilter.download](https://antifilter.download/) and the distribution this subnets over BGP with bird daemon.
 
 Description of setup with a Mikrotik router can be found in the next article on habr:
 
@@ -45,4 +45,3 @@ services:
         max-size: "2m"
         max-file: "10"
 ```
-Link on Docker Hub: https://hub.docker.com/r/hornwind/bird-antifilter
