@@ -1,4 +1,4 @@
-![Docker Cloud Build Status](https://img.shields.io/docker/cloud/build/hornwind/bird-antifilter)
+[![Docker Cloud Build Status](https://img.shields.io/docker/cloud/build/hornwind/bird-antifilter)](https://hub.docker.com/r/hornwind/bird-antifilter)
 ![Docker Pulls](https://img.shields.io/docker/pulls/hornwind/bird-antifilter)
 ![Docker Image Size (tag)](https://img.shields.io/docker/image-size/hornwind/bird-antifilter/latest)
 # [bird-antifilter](https://hub.docker.com/r/hornwind/bird-antifilter)
