@@ -1,5 +1,5 @@
 # [bird-antifilter](https://hub.docker.com/r/hornwind/bird-antifilter)
-This container for the receiving of blocking lists from [antifilter.download](https://antifilter.download/) and the distribution this subnets over BGP with bird daemon.
+This container for the receiving of blocking lists from [antifilter.download](https://antifilter.download/) and the distribution this subnets over BGP with bird daemon. To start, you need to have a raised interface corresponding to $SOURCE_ADDRESS.
 
 Description of setup with a Mikrotik router can be found in the next article on habr:
 
