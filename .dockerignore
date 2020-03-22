@@ -1,6 +1,7 @@
 node_modules
 npm-debug.log
 docker-compose*
+example-bird.conf
 .dockerignore
 .git
 .gitignore

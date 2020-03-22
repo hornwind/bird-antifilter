@@ -1,17 +1,8 @@
 FROM alpine:3
-LABEL name=bird-autoconfig \
+LABEL name=bird-antifilter \
       version="2.0"
 
 ENV TZ=Europe/Moscow
-
-ENV router_id=10.100.0.1 \
-    neighbor_ip=10.100.0.2 \
-    neighbor_as=64998 \
-    local_as=64999 \
-    source_address=10.100.0.1 \
-    scan_time=60
-
-ENV cron_min=30
 
 RUN echo "@testing http://dl-cdn.alpinelinux.org/alpine/edge/testing" >> /etc/apk/repositories \
     && apk add --no-cache \
@@ -32,8 +23,15 @@ COPY supervisord.conf /etc/supervisor/
 COPY chklist /blacklist/
 COPY entrypoint.sh /
 
+ENV ROUTER_ID=10.100.0.1 \
+    NEIGHBOR_IP=10.100.0.2 \
+    NEIGHBOR_AS=64998 \
+    LOCAL_AS=64999 \
+    SOURCE_ADDRESS=10.100.0.1 \
+    SCAN_TIME=60 \
+    CRON_MIN=30
+
 EXPOSE 179 179
 
 ENTRYPOINT [ "/entrypoint.sh" ]
-# CMD ["bird", "-c", "/etc/bird/bird.conf", "-d"]
 CMD ["/usr/bin/supervisord", "-n", "-c", "/etc/supervisor/supervisord.conf"]
